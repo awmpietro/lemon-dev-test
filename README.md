@@ -22,7 +22,8 @@ Nem todos os clientes que desejam fazer parte da Lemon podem ser aceitos no mome
 ## Instalação usando Docker em máquinas Mac ou Linux:
 
 1. Clonar o repositório: [Lemon Dev Test](https://github.com/awmpietro/lemon-dev-test)
-2. Na raíz, rodar o código: `make init`
+2. Na raíz do repositório rodar o comando: `yarn install`
+3. Na raíz, rodar o código: `make init`
    -  Este comando rodará todos os testes unitários e inicializará a API no docker na porta 8085 do seu localhost.
 
 ## Instalação sem Docker (necessários node v20.9.0 e yarn instalados)

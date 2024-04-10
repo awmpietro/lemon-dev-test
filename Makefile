@@ -6,6 +6,7 @@ up:
 
 build_up:
 	@echo "Building and running the API"
+	yarn install
 	docker-compose up --build
 
 down:
