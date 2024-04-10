@@ -22,7 +22,6 @@ exports.verifyEligibility = (req, res, next) => {
 
    const isValidOutput = ajv.validate(outputSchema, result);
    if (!isValidOutput) {
-      // Em um cenário real, esse erro deveria ser registrado e possivelmente gerar um alerta.
       return res.status(500).json({ errors: 'Error in output validation' });
    }
 
