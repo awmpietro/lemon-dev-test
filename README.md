@@ -39,7 +39,7 @@ Nem todos os clientes que desejam fazer parte da Lemon podem ser aceitos no mome
 
 A API possui 1 endpoint:
 
--  [POST Verificar Eligibilidade](http://localhost:8085/verify-eligibility)
+-  POST http://localhost:8085/verify-eligibility
 
 **verifyEligibility:** Irá fazer a validação da eligibilidade do cliente.
 
@@ -50,9 +50,9 @@ Entrada:
 ```json
 {
    "numeroDoDocumento": "14041737706",
-   "tipoDeConexao": "bifasico",
-   "classeDeConsumo": "rural",
-   "modalidadeTarifaria": "verde",
+   "tipoDeConexao": "monofasico",
+   "classeDeConsumo": "comercial",
+   "modalidadeTarifaria": "convencional",
    "historicoDeConsumo": [
       3878, // mes atual
       9760, // mes anterior
